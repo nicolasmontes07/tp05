@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <h1>registro de clientes para  empresa de autos </h1>
+    <form action="/registro">
+        <fieldset>
+            <legend>datos personales</legend>
+            <label for="nombre">Nombre y apellido:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="fe">fecha de nacimineto:</label>
+            <input type="date" id="fe" name="fe" required>
+
+            
+        </fieldset>
+        <fieldset>
+            <legend>redes sociales</legend>
+            <label for="ig">Usuario de instagram:</label>
+            <input type="text" id="ig" name="ig" required>
+
+            <label for="x">Usuario de x:</label>
+            <input type="text" id="x" name="x" required>
+        </fieldset>
+        <fieldset>
+            <legend>localidad</legend>
+            <select id="provincia" name="provincia" required>
+                <option value="Seleccione la provincia">Seleccione la provincia</option>
+                <option value="Rio negro">Rio negro</option>
+                <option value="Neuquen">Neuquen</option>
+                <option value="cordoba">cordoba</option>
+                <option value="tierra del fuego">tierra del fuego</option>
+                <option value="chubut">chubut</option>
+                <option value="santa cruz">santa cruz</option>
+                <option value="san luis">san luis</option>
+                <option value="la pampa">la pampa</option>
+                <option value="catamarca">catamarca</option>
+                <option value="la rioja">la rioja</option>
+                <option value="san juan">san juan</option>
+                <option value="mendoza">mendoza</option>
+                <option value="buenos aires">buenos aires</option>
+                <option value="santiago del estero">santiago del estero</option>
+                <option value="jujuy">jujuy</option>
+                <option value="formosa">formosa</option>
+                <option value="entre rios">entre rios</option>
+                <option value="santa fe">santa fe</option>
+                <option value="chaco">chaco</option>
+                <option value="corrientes">corrientes</option>
+                <option value="tucuman">tucuman</option>
+                <option value="salta">salta</option>
+                <option value="misiones">misiones</option>
+                <option value="CABA">ciudad autonoma de buenos aires</option>
+            </select>
+            <label for="ciudad">ciudad:</label>
+       <input type="text" id="ciudad" name="ciudad" required>
+        </fieldset>
+        <fieldset>
+            <legend>Gustos personales</legend>
+            <label for="for">fornite</label>
+            <input type="radio" id="for" name="for" required>
+            <label for="fifa"> fifa</label>
+            <input type="radio" id="fifa" name="fifa" required>
+            <label for="pes"> Efootball</label>
+            <input type="radio" id="pes" name="pes" required>
+        </fieldset>
+        <input type="submit" value="Registrarse">
+    </form>
+</body>
+</html>
